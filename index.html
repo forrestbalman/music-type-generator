@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Music Type</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-5">
+            <h1>Random Music Type</h1>
+        </div>
+        <div class="col-7">
+          <p class="m-4">For keys that show up in the "Key/Mode/Other" section: lowercase is <strong>minor</strong>, uppercase is <strong>major</strong>.</p>
+        </div>
+      </div>
+      <table class="table-borderless mx-auto" style="table-layout: fixed;">
+        <thead>
+          <th>Genre</th>
+          <th>Mood</th>
+          <th>Key/Mode/Other</th>
+        </thead>
+        <tbody>
+          <td id="genre"></td>
+          <td id="mood"></td>
+          <td id="key"></td>
+        </tbody>
+      </table>
+      <div class="text-center">
+        <button id="generate" type="button" class="btn btn-lg btn-dark">Generate</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
