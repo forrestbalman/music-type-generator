@@ -20,20 +20,28 @@
           <p class="m-4">For keys that show up in the "Key/Mode/Other" section: lowercase is <strong>minor</strong>, uppercase is <strong>major</strong>.</p>
         </div>
       </div>
-      <table class="table-borderless mx-auto" style="table-layout: fixed;">
-        <thead>
-          <th>Genre</th>
-          <th>Mood</th>
-          <th>Key/Mode/Other</th>
-        </thead>
-        <tbody>
-          <td id="genre"></td>
-          <td id="mood"></td>
-          <td id="key"></td>
-        </tbody>
-      </table>
-      <div class="text-center">
-        <button id="generate" type="button" class="btn btn-lg btn-dark">Generate</button>
+      <div class="row">
+        <div class="col-9">
+          <table class="table table-borderless mx-auto" style="table-layout: fixed;">
+            <thead>
+              <tr>
+                <th>Genre</th>
+                <th>Mood</th>
+                <th>Key/Mode/Other</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="genre"></td>
+                <td id="mood"></td>
+                <td id="key"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-3">
+          <button id="generate" type="button" class="btn btn-lg btn-dark">Generate</button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
